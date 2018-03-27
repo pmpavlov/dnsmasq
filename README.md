@@ -56,7 +56,7 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
 
 #### MIT License
 
-Copyright &copy; 2016 Jaime Pillora &lt;dev@jpillora.com&gt;
+Copyright &copy; 2016 &lt;ppavlov@dontmail.me&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
