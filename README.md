@@ -2,6 +2,8 @@
 
 dnsmasq in a docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc)
 
+[![Docker Repository on Quay](https://quay.io/repository/ppavlov/dnsmasq/status "Docker Repository on Quay")](https://quay.io/repository/ppavlov/dnsmasq)
+
 ### Usage
 
 1. Create a [`/opt/dnsmasq.conf`](http://oss.segetech.com/intra/srv/dnsmasq.conf) file on the Docker host
