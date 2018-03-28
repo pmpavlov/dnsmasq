@@ -9,6 +9,11 @@ steps:
    candidate: '${{BuildImage}}'
    tag: ${{CF_BRANCH}}
    image_name: ppavlov/dnsmasq
+  PushToRegistry:
+   type: push
+   candidate: '${{BuildImage}}'
+   tag: ${{CF_BRANCH}}
+   image_name: quay.ioppavlov/dnsmasq
   Scan:
     image: codefresh/klar
     commands:
