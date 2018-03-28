@@ -3,6 +3,7 @@
 dnsmasq in a docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc)
 
 [![Docker Repository on Quay](https://quay.io/repository/ppavlov/dnsmasq/status "Docker Repository on Quay")](https://quay.io/repository/ppavlov/dnsmasq)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=pmpavlov&repoName=dnsmasq&branch=master&pipelineName=dnsmasq&accountName=ppavlov&type=cf-1)]( https://g.codefresh.io/repositories/pmpavlov/dnsmasq/builds?filter=trigger:build;branch:master;service:5abb7fb7b53d6900011f0f24~dnsmasq)
 
 ### Usage
 
