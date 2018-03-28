@@ -2,7 +2,7 @@ version: '1.0'
 steps:
   BuildImage:
     type: build
-    image_name: ppavlov/dnsmasq
+    image_name: quay.io/ppavlov/dnsmasq
     tag: ${{CF_BRANCH}}
   PushToRegistry:
    type: push
