@@ -2,17 +2,18 @@ version: '1.0'
 steps:
   BuildImage:
     type: build
+    title: Building Image
     image_name: ppavlov/dnsmasq
     tag: ${{CF_BRANCH}}
   PushToRegistry:
    type: push
-   candidate: '${{BuildImage}}'
+   candidate: '${{build_image}}'
    tag: ${{CF_BRANCH}}
    image_name: ppavlov/dnsmasq
    registry: quay.io
    credentials:
-      username: ${{quay-user}}
-      password: ${{quay-pass}}
+      username: '${{quayUsername}}'
+      password: '${{quayPassword}}'
   Scan:
     image: codefresh/klar
     commands:
