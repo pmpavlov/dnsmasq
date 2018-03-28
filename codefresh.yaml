@@ -2,13 +2,13 @@ version: '1.0'
 steps:
   BuildImage:
     type: build
-    image_name: quay.io/ppavlov/dnsmasq
+    image_name: ppavlov/dnsmasq
     tag: ${{CF_BRANCH}}
   PushToRegistry:
    type: push
    candidate: '${{BuildImage}}'
    tag: ${{CF_BRANCH}}
-   image_name: quay.io/ppavlov/dnsmasq
+   image_name: ppavlov/dnsmasq
   Scan:
     image: codefresh/klar
     commands:
