@@ -8,7 +8,7 @@ steps:
    type: push
    candidate: '${{BuildImage}}'
    tag: ${{CF_BRANCH}}
-   image_name: quai.io/ppavlov/dnsmasq
+   image_name: quay.io/ppavlov/dnsmasq
   Scan:
     image: codefresh/klar
     commands:
