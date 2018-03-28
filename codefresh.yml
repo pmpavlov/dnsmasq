@@ -7,13 +7,13 @@ steps:
     tag: ${{CF_BRANCH}}
   PushToRegistry:
    type: push
-   candidate: '${{build_image}}'
+   candidate: ${{BuildImage}}
    tag: ${{CF_BRANCH}}
    image_name: ppavlov/dnsmasq
    registry: quay.io
    credentials:
-      username: '${{quayUsername}}'
-      password: '${{quayPassword}}'
+      username: ${{quayUsername}}
+      password: ${{quayPassword}}
   Scan:
     image: codefresh/klar
     commands:
