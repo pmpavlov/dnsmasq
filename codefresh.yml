@@ -10,6 +10,9 @@ steps:
    tag: ${{CF_BRANCH}}
    image_name: ppavlov/dnsmasq
    registry: quay.io
+   credentials:
+      username: ${{quay-user}}
+      password: ${{quay-pass}}
   Scan:
     image: codefresh/klar
     commands:
